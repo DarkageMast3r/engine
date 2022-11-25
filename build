@@ -1,0 +1,2 @@
+gcc -c *.c -Wall
+gcc *.o -ldl -lglfw -lm -o game
