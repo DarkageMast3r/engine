@@ -9,7 +9,7 @@ void *debug_malloc(uint bytes, uint line, char *file) {
 }
 
 void *debug_realloc(void *ptr, uint bytes, uint line, char *file) {
-	printf("Reallocating to %d bytes # %s > %d\n\n", bytes, file, line);
+	printf("Reallocating to %d bytes in file %s, line %d\n\n", bytes, file, line);
 	fflush(stdout);
 	return realloc(ptr, bytes);
 }
